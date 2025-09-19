@@ -10,7 +10,7 @@ app.use(express.json())
 const server=http.createServer(app)
 const io=new Server(server,{
     cors:{
-        origin: "https://3795c0ab-8993-4c04-bf9c-f2a9e8227bcf-00-1mbw3vog5eiat.kirk.replit.dev/",
+        origin: "https://3795c0ab-8993-4c04-bf9c-f2a9e8227bcf-00-1mbw3vog5eiat.kirk.replit.dev",
         methods:["GET","POST"],
     }
 })
@@ -47,3 +47,4 @@ const PORT=process.env.PORT || 3000;
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server running on port ${PORT}`)
 })
+
