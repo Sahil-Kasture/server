@@ -42,8 +42,9 @@ app.get("/",(req,res)=>{
 })
 
 
-const PORT=3002
+const PORT=process.env.PORT || 3000;
 
 server.listen(PORT,"localhost",()=>{
     console.log("server is running on : http://localhost:3002/")
+
 })
